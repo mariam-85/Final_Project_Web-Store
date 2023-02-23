@@ -1,7 +1,7 @@
 import React from 'react'
 import Cart from '../../components/Cart'
 import { useSelector,useDispatch } from 'react-redux'
-import {GiShoppingCart} from 'react-icons/gi'
+import { BsCartX } from 'react-icons/bs'
 import style from './index.module.css'
 import {RightOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
@@ -33,15 +33,12 @@ export default function CartPage() {
         </div>
       {
         cart.length === 0 
-        ? <div className={style.cart}>
-            <div className={style.cart_empty}>
-              <GiShoppingCart className={style.cart_icon}/>
-              <p>Cart is empty. Please make your choice</p>
-            </div>
-          </div>
+        ? <div className={style.empty_cart}>
+              <BsCartX className={style.cart_icon}/>
+          </div>         
         :
-          <div className={style.cart_content}>
-            <div className={style.cart_container}>
+          <div className={style.cart_block}>
+            <div className={style.cart_section}>
               {
                 cart.map(el => <Cart key={el.id} {...el}/>)
               }
@@ -53,7 +50,7 @@ export default function CartPage() {
                 <p className={style.total_price}>{total}$</p>
               </div>
               <form className={style.cart_form}>
-                <input type="number" placeholder='phone number' name='number'/>
+                <input type="number" placeholder='Phone number' name='number'/>
                 <button className={style.submit_btn}>Order</button>
                 <button className={style.clear_btn} onClick={clear_cart}>Clear cart</button>             
               </form>

@@ -1,8 +1,8 @@
 import React from 'react'
 import style from './index.module.css'
-import { BsTrash } from "react-icons/bs"
-import { HiOutlineMinus } from "react-icons/hi"
-import { HiPlus } from "react-icons/hi"
+import  {RxCross2 } from "react-icons/rx"
+import { BiMinus } from "react-icons/bi"
+import { BiPlus } from "react-icons/bi"
 import { useDispatch } from 'react-redux'
 import { incrementProduct, decrementProduct, deleteProduct } from '../../store/reducers/cart'
 
@@ -20,9 +20,9 @@ export default function CartItem({ id, image, title, price, discont_price,count 
     <div className={style.title_btn}>
       <p>{title}</p>
       <div className={style.cart_btn_count}>
-        <button onClick={decr_prod}><HiOutlineMinus /></button>
+        <button onClick={decr_prod}><BiMinus /></button>
         <p>{count}</p>
-        <button onClick={incr_prod}><HiPlus /></button>
+        <button onClick={incr_prod}><BiPlus /></button>
       </div>
     </div>
 
@@ -30,7 +30,7 @@ export default function CartItem({ id, image, title, price, discont_price,count 
       <p className={style.discont_price}>{discont_price}$</p>
       <p className={style.full_price}>{price}$</p>
     </div>
-    <BsTrash className={style.trash_icon} onClick={delete_prod} />
+    <RxCross2 className={style.cross_icon} onClick={delete_prod} />
 </div>
   )
 }
