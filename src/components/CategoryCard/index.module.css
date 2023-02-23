@@ -1,0 +1,21 @@
+.cat_card {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.cat_img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    gap: 32px;
+}
+
+.cat_title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}

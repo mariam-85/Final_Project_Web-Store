@@ -1,0 +1,19 @@
+.cat_title {
+	display: flex;
+	align-items: center;
+	margin: 50px 0 50px 50px;
+	gap: 40px;
+}
+.cat_title p {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.cat_card {
+    display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    
+}

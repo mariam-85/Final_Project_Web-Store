@@ -1,0 +1,36 @@
+.cat_container {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 32px;
+    
+}
+
+.cat_block {
+    padding: 40px 0 112px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.cat_info {
+    display: flex;
+    justify-content:start;
+    padding: 20px;
+    gap: 90px;
+    
+}
+
+.button {
+    margin: 16px 0 0 26px;
+    border: 2px solid #8B8B8B;
+    width: 120px;
+    height: 31px;
+    padding: 7px 11px;
+    color: #8B8B8B;
+    cursor: pointer;
+    background-color: white;
+}

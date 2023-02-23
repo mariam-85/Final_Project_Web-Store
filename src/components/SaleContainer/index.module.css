@@ -1,0 +1,25 @@
+.prod_container {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 32px;
+    
+}
+
+.prod_block {
+    padding: 40px 0 112px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.prod_info {
+    display: flex;
+    justify-content:start;
+    padding: 20px;
+    gap: 90px;
+    
+}
