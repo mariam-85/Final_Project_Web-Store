@@ -1,81 +1,33 @@
-.container_logo_btn {
-    width: 260px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container_logo_btn button {
-    background-color: #339933;
-    border: 2px solid #339933;
-    height: 50px;
-    border-radius: 5px;
-    margin-top: 39px;
-    width: 129px;
-    height: 49px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
-}
-
-.container_logo_btn img {
-    width: 72px;
-    height: 72px;
-    margin-top: 19px;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     height: 167px;
 }
 
-
-
-
-/* .main_header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-/* //////////////// */
-
-/* .header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 17px;
-}
-
-.logo_btn{
+.logo_button {
+    width: 257px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    gap: 20px;
-    margin-right: 1000px;
 }
 
-.logo_btn img{
-    padding: 20px;
-} */
-
-
-/* //////////// */
-
-
-
-/* .header{
-    display: grid;
-    align-items: center;
-    grid-template-columns: [start] auto [logo] 60px [button_start] auto [button_end] 1fr [nav_start] auto [nav_end];
+.logo_button img {
+    width: 72px;
+    height: 72px;
+    margin-top: 19px;
 }
 
-
-
-.nav{
-    grid-column: nav_start / nav_end;
-    justify-self: end;
-} */
+.logo_button button {
+    background-color: #339933;
+    border: 2px solid #339933;
+    height: 49px;
+    border-radius: 5px;
+    margin-top: 35px;
+    width: 125px;
+    height: 49px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
 
 

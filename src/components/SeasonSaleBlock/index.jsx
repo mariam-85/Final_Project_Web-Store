@@ -4,7 +4,7 @@ import image from './media/image 2.png'
 
 export default function SaleBanner() {
   return (
-    <section className={style.sale_container} id='coupon'>
+    <section className={style.sale_container} id='sale'>
         <div className={['wrapper',style.sale_info].join(' ')}>
             <h1 className={style.sale_title}><span className={style.accent}>Sale</span>start of a new season</h1>
             <button className={style.sale_btn}>All sale</button>
