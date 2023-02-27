@@ -16,7 +16,7 @@ const cart_count = cart.reduce((total,item) => total + item.count, 0 )
         <Link to='categories'>
           <p>Categories</p>
         </Link>
-        <AnchorLink href='#sale'>
+        <AnchorLink href='#sale_block'>
           <p>Coupon</p>
         </AnchorLink>
         <AnchorLink href='#discount'>
