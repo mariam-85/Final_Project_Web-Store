@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './index.module.css'
-import image from './media/image 2.png'
 
 export default function SeasonSaleBlock() {
   return (
@@ -11,7 +10,6 @@ export default function SeasonSaleBlock() {
             <button className={style.sale_button}>Sale</button>
             <button className={style.learn_button}>Learn more</button>
         </div>
-        {/* <img src={ image } alt="image" className={ style.sale_image }/> */}
     </section>
   )
 }

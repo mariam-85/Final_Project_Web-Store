@@ -15,12 +15,12 @@ export default function SaleContainer() {
 
 
   return (
-    <section className={style.prod_block}>
+    <section className={style.products_block}>
     <div className='wrapper'>
-        <div className={style.prod_info}>
-            <p className={style.title}>Sale</p>
+        <div className={style.products_block_content}>
+            <p className={style.products_block_title}>Sale</p>
         </div>
-        <div className={style.prod_container}>
+        <div className={style.products_container}>
 
             {
                     products.slice(0, 3).map((el, index) => (<ProductCard key={index} {...el} />))

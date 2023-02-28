@@ -1,21 +1,20 @@
-.cat_card {
-    cursor: pointer;
+.categorie_card {
     text-decoration: none;
-    color: #000000;
 }
 
-.cat_img {
+.categorie_card_image {
     width: 320px;
-    height: 300px;
+    height: 320px;
     object-fit: cover;
-    gap: 32px;
+    gap: 35px;
 }
 
-.cat_title {
+.categorie_card p {
     font-weight: 600;
     font-size: 18px;
     line-height: 130%;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
+    color: #000000;
 }

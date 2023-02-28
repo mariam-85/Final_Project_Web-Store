@@ -1,208 +1,94 @@
-.footer {
-    height: 375px;
+.footer_block {
+    height: 371px;
 }
 
 .footer_container {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0 0px;
+    padding: 150px 0 50px 0;
+    color: #000000;
 }
 
-.phone {
-    font-weight: 600;
-    font-size: 60px;
+.contacts_block_title{
+    font-weight: 700;
+    font-size: 40px;
     line-height: 130%;
-    margin: 25px 0 32px;
-    cursor: pointer;
 }
 
-.social_icons {
-    width:100px;
+.phone_info {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 130%;
+    margin: 25px 0 32px 0;
+}
+
+.messanger_icons {
     display: flex;
     justify-content: space-between;
+    width: 50px;
+    gap: 80px;
+    margin-top: 30px;
+    text-decoration: none;
+    align-items: center;
 }
 
-.insta_icon ,
-.whatsApp_icon {
+.instagram_icon p {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.instagram_icon {
     width: 44px;
     height: 44px;
     cursor: pointer;
     color: black;
 }
 
-.address {
+.whatsApp_icon {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.whatsApp_icon p {
+    margin-top: 5px;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 130%;
-    margin-top: 25px;
-    width: 564px;
-}
-
-.subtitle {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 130%;
-    margin-top: 20px;
-}
-
-.accent {
-    display: block;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 130%;
-}
-
-.accent_city {
-    display: block;
-    font-weight: 600;
-    font-size: 35px;
-}
-
-
-
-
-
-
-/* ////////////
-.main_footer{
-    /* display: flex;
-    justify-content: space-around;
-    padding: 50px 10px 50px 10px; */
-
-    /* height: 400px;
-}
-
-.footer{
-    display: flex;
-    justify-content: space-around;
-    padding: 48px 32px;
-
-}
-    
-.contacts_block{
-    display: flex;
-    flex-direction: column;
-    /* width: 65%; */
-    /* font-size: 40px;
+    font-size: 15px;
     line-height: 130%;
     color: #000000;
 }
 
-/////////////// */ 
-
-
-
-/* .phone{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-style: normal;
-    color: #000000;
-}
-
-.phone p{
+.address_title {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
 }
 
-.phone h2{
-    width: 600px;
-    height: 91px;
-    font-style: normal;
+.address_content {
     font-weight: 600;
-    font-size: 70px;
+    font-size: 40px;
     line-height: 130%;
-    color: #000000;
-} */
+    margin-top: 25px;
+    width: 564px;
+}
 
-
-
-
-/* 
-////////////////////
-
-.messengers{
-    display: flex;
-    gap: 63px;
-    text-align: center;
+.working_mode {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
     margin-top: 20px;
 }
 
-
-.address{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    /* width: 35%; */
-    /* line-height: 130%;
-    color: #000000;
-    height: 104px;
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.address p{
-height: 23px;
-font-weight: 500;
-font-size: 18px;
-}
-
-.adr{
-width: 138px;
-height: 52px;
-font-weight: 700;
-font-size: 40px;
-}
-
-
-///////////////// */
-
-
-
-
-
-/* .city_name{
-    width: 536px;
-    height: 104px;
-   
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
-}
-
-.city_name h2{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 130%;
-
-} */
-
-
-
-
-
-
-
-/* ///////////////
-
-.mode{
-    width: 141px;
-    height: 23px;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.hours{
-    width: 193px;
-    height: 31px;
+.working_hours {
+    display: block;
     font-weight: 600;
     font-size: 24px;
-   line-height: 1%;
+    line-height: 130%;
+    margin-top: 1px;
 }
-
-//////////////// */
 
 
 

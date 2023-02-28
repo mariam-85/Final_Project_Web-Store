@@ -14,7 +14,7 @@ const cart_count = cart.reduce((total,item) => total + item.count, 0 )
   return (
     <nav className={style.nav_menu}>
         <Link to='categories'>
-          <p>Categories</p>
+          <p>Catalogs</p>
         </Link>
         <AnchorLink href='#sale_block'>
           <p>Coupon</p>
@@ -27,7 +27,7 @@ const cart_count = cart.reduce((total,item) => total + item.count, 0 )
         </AnchorLink>
           <Link to='cart'>
             <div className={style.nav_cart}>
-              <img src={cart_img} alt="logo" className={style.cart_pic}/>
+              <img src={cart_img} alt="logo" className={style.cart_picture}/>
               {
                 cart.length !== 0 ? <p>{ cart_count }</p> : ''
               }

@@ -1,17 +1,17 @@
-.cat_title {
-	display: flex;
-	align-items: center;
-	margin: 50px 0 50px 50px;
-	gap: 40px;
+.categories_block {
+    margin: 50px 0 0 100px 0;
 }
-.cat_title p {
+
+.categories_block p {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
-    margin-bottom: 40px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 70px;
 }
 
-.cat_card {
+.categories_card {
     display: grid;
 	grid-template-columns: repeat(4, 1fr);
     gap: 35px;

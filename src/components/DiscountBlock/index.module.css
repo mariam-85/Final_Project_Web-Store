@@ -1,9 +1,25 @@
 .discount_section {
     background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
-    height: 476px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
-    padding: 0 112px 0 0;
+    padding: 44px 150px 30px 100px;
+}
+
+.discount_section_title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+}
+
+.second_title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
 }
 
 .discount_form {
@@ -16,7 +32,8 @@
     width: 473px;
     height: 75px;
     border-radius: 25px;
-    padding: 27px 0 27px 50px;
+    background: #FFFFFF;
+    padding: 27px 0 26px 50px;
     margin-top: 46px;
     border: none;
     outline: none;
@@ -27,10 +44,11 @@
 
 ::placeholder { 
     color: #6C6C6C;
-    opacity: 1;   
+    opacity: 0.5;   
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
+    letter-spacing: 0.03em;
   }
 
 .discount_form button {
@@ -38,144 +56,33 @@
     height: 75px;
     border-radius: 25px;
     border: 2.4px solid  #FFFFFF;
-    padding: 20px 94px 20px 95px;
+    background-color: #339933;
+    padding: 21px 72px 20px 90px;
     font-weight: 700;
-    font-size: 28.7392px;
+    font-size: 29px;
     line-height: 120%;
     cursor: pointer;
-    margin-top: 39px;
-}
-
-.discount_title {
-    color: #FFFFFF;
-    margin: 44px 52px 0 0;
-}
-
-.accent_discount {
-    display: block;
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 100%;
-}
-
-.errors_message {
-   color: #e8aeae;
-   margin-left: 15px; 
-}
-
-
-/* ////////////
-
-.section{
-    /* background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%); */
-    /* background-color: #339933;
-    min-height: 576px;
-    /* padding: 27px 927px 91px; */
-    /* background-image: url('./media/image 3.png');
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: 50px;
-    margin-top: 500px;
-    padding-top: 100px;
-    padding-left: 1000px;
-    display:flex;
-	height: 476px;
-} */ 
-
-
-/* .discount{
-    display: flex;
-	flex-direction: column;
-    margin: 44px;
-    width: 575px;
-    height: 159px;
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 100%;
+    margin-top: 20px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 
-.order{
-    font-size: 60px;
-}
-///////////// */ 
-
-/* .input{
-    display: flex;
-    flex-direction: row;
-    width: 473px;
-    height: 75.44px;
-    background: #FFFFFF;
-    border-radius: 25.1468px;
-    margin: 44px;
+.discount_form button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    transition: 1s;
 }
 
-/* margin-top: 200px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 25px 50px;
-    gap: 10px;
-    position: absolute;
-    width: 241px;
-    height: 82px;
-    background: transparent;
-    border-radius: 13px;
-    border-color: #FFFFFF;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 130%;
-    cursor: pointer; */
 
-/* .button{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-box-sizing: border-box;
-width: 473px;
-height: 75.44px;
-background-color: #339933;
-border: 2.39494px solid #FFFFFF;
-border-radius: 25.1468px;
 
-font-weight: 700;
-font-size: 28.7392px;
-line-height: 120%;
-letter-spacing: 0.03em;
-color: #FFFFFF;
-align-items: center;
-cursor: pointer;
-
-} */
-
-/* .form {
-	display: flex;
-	flex-direction: column;
+.error_message {
+    color: darkgrey;
+    margin-right: 60px; 
+    margin-top: 1px;
+    font-size: 14px;
+    text-align: end;
 }
-.form input{
-	height: 75px;
-	width: 473px;
-	border-radius:25px;
-	margin-left: 100px;
-	margin-top: 40px;
-	font-size: 18px;
-	padding-left: 35px;
-}
-.form button{
-	height: 75px;
-	width: 473px;
-	border-radius:25px;
-	margin-left: 100px;
-	margin-top: 25px;
-	font-size: 18px;
-	color:#FFFFFF;
-	background-color: transparent;
-	border: 3px solid #FFFFFF;
-	font-weight: 700;
-    font-size: 28.7392px;
-} */
 
 
 

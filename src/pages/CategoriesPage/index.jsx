@@ -15,11 +15,11 @@ export default function CategoriesPage() {
 	
 
     return (
-			<section className={['wrapper', style.cat_section].join(' ')}>
-				<div className={style.cat_title}>
-                <p>Categories</p>
+			<section className={['wrapper'].join(' ')}>
+				<div className={style.categories_block}>
+                <p className={style.categories_block}>Categories</p>
                 </div>
-            <div className={style.cat_card}>
+            <div className={style.categories_card}>
 					{categories.map((el, index) => (
 						<CategoryCard key={index} {...el} />
 					))}

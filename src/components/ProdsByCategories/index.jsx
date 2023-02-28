@@ -34,7 +34,7 @@ export default function ProdsCategoryContainer() {
     return (
     <section className={s.products_section}>
         <div className='wrapper'>
-            <p>...</p>
+            <p>{ category.title }</p>
             <div className={s.sorting}>
                 <div>
                     <span className={s.form_title}>Price </span>

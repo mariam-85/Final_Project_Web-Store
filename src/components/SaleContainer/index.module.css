@@ -1,25 +1,30 @@
-.prod_container {
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr);
-    gap: 32px;
+.products_block {
+    padding: 50px 0 100px;
     
 }
 
-.prod_block {
-    padding: 40px 0 112px;
-}
-
-.title {
+.products_block_title {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
-    margin-bottom: 40px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-bottom: 21px;
 }
 
-.prod_info {
+.products_block_content {
     display: flex;
-    justify-content:start;
-    padding: 20px;
-    gap: 90px;
+    justify-content:start;       
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    gap: 44px;
     
 }
+
+
+
+
+
