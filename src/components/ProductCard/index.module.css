@@ -16,7 +16,7 @@
     border: 3px solid transparent;
     background-color: white;
     border-radius: 3px;
-    bottom: 10px;
+    bottom: 150px;
     right: 30px;
     color: black;
     font-size: 20px;
@@ -29,7 +29,7 @@
 
 .product_card:hover button {
     opacity: 0.8;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .info_block {

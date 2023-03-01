@@ -41,4 +41,4 @@ export const productsByCategoryReducer = ( state= defaultState, action ) => {
     } else {
         return state
     }  
-}
+};
