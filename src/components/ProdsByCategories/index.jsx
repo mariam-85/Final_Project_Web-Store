@@ -6,7 +6,7 @@ import ProductCard from '../ProductCard';
 import style from './index.module.css'
 import { sortProducts, searchProducts } from '../../store/reducers/prod_category';
 
-export default function ProdsCategoryContainer() {
+export default function ProdsByCategories() {
 
     const  dispatch = useDispatch();
 

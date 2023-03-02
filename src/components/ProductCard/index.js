@@ -13,7 +13,7 @@ export default function ProductCard({ id, title, image, price, discont_price, ca
 
     const dispatch = useDispatch();
 
-    const add_to_cart = () => dispatch(addToCart({id: image, title, price, discont_price}))
+    const add_to_cart = () => dispatch(addToCart({id: title, image, price, discont_price}))
 
   return (
 
