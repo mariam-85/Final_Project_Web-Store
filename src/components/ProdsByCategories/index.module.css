@@ -8,6 +8,15 @@
   padding: 10px 0 80px 0; 
 }
 
+.products_by_category_block h2{
+  padding: 20px 0 10px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
 .sorting_block span {
   font-weight: 600;
   font-size: 20px;
@@ -79,7 +88,9 @@
   }
 
   .sorting_block {
-    justify-content: center;
+    gap: 50px;
+   
+
   }
 }
 

@@ -6,13 +6,18 @@ import ProductCard from '../ProductCard';
 import style from './index.module.css'
 import { sortProducts, searchProducts } from '../../store/reducers/prod_category';
 
+
 export default function ProdsByCategories() {
 
-    const  dispatch = useDispatch();
+    const  dispatch = useDispatch(); 
 
     const { category } = useParams();
 
-    const prodsBycategory = useSelector(state => state.prodsByCategory)
+    const prodsBycategory = useSelector(state => state.prodsByCategory);
+
+    const categories = useSelector(state => state.categories);
+
+    console.log(category);
 
     useEffect(() => {
         dispatch(getProductsByCategory(category))
@@ -28,13 +33,17 @@ export default function ProdsByCategories() {
         const min_value = min.value || 0;
         const max_value = max.value || Infinity;
         dispatch(searchProducts({ min_value, max_value }));
-    
     }
+
+    const current_category = categories.find(el => el.id === +category);
 
     return (
     <section className={style.products_by_category_block}>
         <div className='wrapper'>
-            {/* <p>{ category.title }</p> */}
+            {current_category && 
+            <h2>{current_category.title}</h2>
+            }
+            
             <div className={style.sorting_block}>
                 <div>
                     <span>Price </span>
@@ -70,8 +79,6 @@ export default function ProdsByCategories() {
 
 
 
-
-
 // import React, { useEffect } from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { getProductsByCategory } from '../../requests/prod_category';
@@ -79,24 +86,14 @@ export default function ProdsByCategories() {
 // import ProductCard from '../ProductCard';
 // import style from './index.module.css'
 // import { sortProducts, searchProducts } from '../../store/reducers/prod_category';
-// // import { getCategory } from '../../requests/category.js'
 
-// export default function ProdsCategoryContainer() {
+// export default function ProdsByCategories() {
 
 //     const  dispatch = useDispatch();
-
-//     // const { categoryId } = useParams();
 
 //     const { category } = useParams();
 
 //     const prodsBycategory = useSelector(state => state.prodsByCategory)
-
-//     // const category = useSelector( state => state.category)
-
-//     // useEffect(() => {
-//     //     dispatch(getCategory(categoryId))
-//     //     dispatch(getProductsByCategory(categoryId))
-//     // }, [])
 
 //     useEffect(() => {
 //         dispatch(getProductsByCategory(category))
@@ -116,12 +113,12 @@ export default function ProdsByCategories() {
 //     }
 
 //     return (
-//     <section className={style.products_by_categories_block}>
+//     <section className={style.products_by_category_block}>
 //         <div className='wrapper'>
-//             <h2>{ category.title }</h2>
-//             <div className={style.sorting}>
+//             {/* <p>{ category.title }</p> */}
+//             <div className={style.sorting_block}>
 //                 <div>
-//                     <span className={style.form_title}>Price </span>
+//                     <span>Price </span>
 //                     <form className={style.search_form} onSubmit={search_products}>
 //                         <input type="number" placeholder='from' name='min'  min='0'/>
 //                         <input type="number" placeholder='to' name='max'  min='0'/>
@@ -130,8 +127,8 @@ export default function ProdsByCategories() {
 //                 </div>
 
 //                 <div>
-//                     <span className={style.form_title}>Sorted </span>
-//                         <select className={style.sort_select} onInput={sort_product}>
+//                     <span>Sorted</span>
+//                         <select className={style.select_form} onInput={sort_product}>
 //                             <option value='default'>by default</option>
 //                             <option value='title'>by title</option>
 //                             <option value='price'> by price</option>
@@ -139,7 +136,7 @@ export default function ProdsByCategories() {
 //                 </div>
 //             </div>
             
-//             <div className={style.products_by_categories_container}>
+//             <div className={style.products_container}>
 //                 {
 //                     prodsBycategory
 //                     .filter(el => !el.hide_elem)

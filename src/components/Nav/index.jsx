@@ -2,7 +2,6 @@ import React from 'react'
 import cart_img from './media/cart_pic.png'
 import style from './index.module.css'
 import { Link } from 'react-router-dom'
-// import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { useSelector } from 'react-redux'
 import { MenuOutlined } from '@ant-design/icons'
 import { HashLink } from 'react-router-hash-link';

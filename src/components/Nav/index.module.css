@@ -68,7 +68,7 @@
         grid-template-columns: 1fr;
 		position: absolute;
 		right: 0;
-		top: 100%;
+		top: 50%;
 		background: linear-gradient(
             0deg,
             rgba(207, 210, 208, 0.65),
@@ -77,15 +77,15 @@
         border-radius: 10px;
 		color: #339933;
 		font-size: 25px;
-		transform: translateY(-15%);
+		transform: translateX(2000%);
         font-weight: 700;
         z-index: 100;
-        padding: 70px;
+        padding: 50px;
         
     }
 
     .nav_menu.active{
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 

@@ -5,10 +5,9 @@ import { productReducer } from './reducers/product';
 import { cartReducer } from './reducers/cart';
 import { randomProductsReducer } from './reducers/random_products';
 import { productsByCategoryReducer } from './reducers/prod_category';
-// import { categoryReducer } from './reducers/category.js';
+import { categoryReducer } from './reducers/category.js';
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-
 import thunk from 'redux-thunk'
 
 
@@ -19,7 +18,7 @@ const rootReducer = combineReducers({
   cart: cartReducer,
   random_products: randomProductsReducer,
   prodsByCategory: productsByCategoryReducer,
-  // category: categoryReducer
+  category: categoryReducer
 });
 
 const persistConfig = {

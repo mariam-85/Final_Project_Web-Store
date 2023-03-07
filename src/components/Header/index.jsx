@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from '../Nav'
 import logo from './media/logo_pic.png'
 import style from './index.module.css'
 import { Link } from 'react-router-dom'
 
     export default function Header() {
+
+        const[ menuActive, setMenuActive ] = useState (true);
+
         return (
         <section>
             <div className={['wrapper', style.header].join(' ')}>
@@ -16,7 +19,7 @@ import { Link } from 'react-router-dom'
                         <button className={style.catalog_button}>Catalog</button>
                     </Link>
                 </div>
-                <Nav />
+                <Nav menuActive={menuActive} setMenuActive={setMenuActive}/>
             </div>
         </section>
     
