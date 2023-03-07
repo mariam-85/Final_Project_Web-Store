@@ -1,6 +1,3 @@
-// на бекенде добавила возможность делать запрос на отдельную категорию 
-// по ссылке http://localhost:3333/categories/info/1
-
 import { loadCategoryById } from "../store/reducers/category.js"; 
 
 export const getCategory = (id) => {
