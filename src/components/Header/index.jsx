@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
                         <img src={logo} alt="logo" />
                     </Link>
                     <Link to='products'>
-                        <button>Catalog</button>
+                        <button className={style.catalog_button}>Catalog</button>
                     </Link>
                 </div>
                 <Nav />

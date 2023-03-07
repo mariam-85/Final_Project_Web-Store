@@ -16,18 +16,38 @@
     margin-top: 19px;
 }
 
-.logo_button button {
+.catalog_button {
+    width: 125px;
+    height: 49px;
     background-color: #339933;
     border: 2px solid #339933;
-    height: 49px;
     border-radius: 5px;
     margin-top: 35px;
-    width: 125px;
     height: 49px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+    .logo_button {
+        height: 180px;
+        width: 180px;
+    }
+
+    .logo_button img {
+        width: 45px;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    .catalog_button {
+        width: 80px;
+        height: 35px;
+    }
 }
 
 

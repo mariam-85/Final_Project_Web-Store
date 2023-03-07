@@ -6,7 +6,8 @@ import { BiPlus } from "react-icons/bi"
 import { useDispatch } from 'react-redux'
 import { incrementProduct, decrementProduct, deleteProduct } from '../../store/reducers/cart'
 
-export default function Cart({ id, image, title, price, discont_price,count }) {
+
+  export default function Cart({ id, title, price, image,  count, discont_price }) {
 
   const dispatch = useDispatch();
 
@@ -15,11 +16,11 @@ export default function Cart({ id, image, title, price, discont_price,count }) {
   const delete_prod = () => dispatch(deleteProduct(id));
 
   return (
-    <div className={style.cart_item}>
+    <div className={style.product_card}>
     <img src={`http://127.0.0.1:3333${image}`} alt={title} className={style.product_card_img}/>
-    <div className={style.title_btn}>
+    <div className={style.product_content}>
       <p>{title}</p>
-      <div className={style.cart_btn_count}>
+      <div className={style.cart_count_form}>
         <button onClick={decr_prod}><BiMinus /></button>
         <p>{count}</p>
         <button onClick={incr_prod}><BiPlus /></button>

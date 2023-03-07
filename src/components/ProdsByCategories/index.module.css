@@ -71,3 +71,49 @@
   font-size: 16px; 
   font-weight: 500px;
 }
+
+@media (max-width: 1100px) {
+  .products_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .sorting_block {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .products_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sorting_block {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .select_form { 
+    width: 100px;
+    padding: 10px;
+    font-size: 13px; 
+  }
+  
+  .sorting_block span {
+    font-size: 15px;
+  } 
+  
+  .search_form input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sorting_block {
+    flex-direction: column;
+  }
+  .products_container {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}

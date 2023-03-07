@@ -22,7 +22,7 @@ const numberRegister = register('number', {
 })
 
   return (
-    <section className={style.discount_section} id='discount'>
+    <section className={style.discount_block} id='discount'>
         <img src={image} alt="img" />
         <div>
             <h2 className={style.discount_section_title}>5% off</h2>

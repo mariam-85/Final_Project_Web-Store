@@ -46,7 +46,7 @@ export default function ProdsByCategories() {
                 </div>
 
                 <div>
-                    <span>Sorted </span>
+                    <span>Sorted</span>
                         <select className={style.select_form} onInput={sort_product}>
                             <option value='default'>by default</option>
                             <option value='title'>by title</option>

@@ -3,6 +3,7 @@ import style from './index.module.css'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../store/reducers/cart'
 import { useParams } from 'react-router-dom'
+
 export default function ProductDescr({ title, price, discont_price, description, image }) {
 
     const discont = Math.round(((price - discont_price) / price )* 100)
@@ -11,7 +12,7 @@ export default function ProductDescr({ title, price, discont_price, description,
 
     const { id } = useParams();
 
-    const add_to_cart = () => dispatch(addToCart({id: title, image,  price, discont_price}))
+    const add_to_cart = () => dispatch(addToCart({id, title, image,  price, discont_price}))
 
 
   return (
